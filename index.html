@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <ul class="nav-links">
+                <li><a href="#Engineering_course">Engineering course</a></li>
+                <li><a href="#International_mobility">International mobility</a></li>
+                <li><a href="#Sustainability_and_civic_engagement">Sustainability and civic engagement</a></li>
+                <li><a href="#Sport_and_other_activities">Sport and other activities</a></li>
+                <li><a href="#Career_development">Career development</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#Engineering_course" onclick="toggleMenu()">Engineering course</a></li>
+                <li><a href="#International_mobility" onclick="toggleMenu()">International mobility</a></li>
+                <li><a href="#Sustainability_and_civic_engagement" onclick="toggleMenu()">Sustainability and civic engagement</a></li>
+                <li><a href="#Sport_and_other_activities" onclick="toggleMenu()">Sport and other activities</a></li>
+                <li><a href="#Career_development" onclick="toggleMenu()">Career development</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Ikram Berroug</h1>
+            <p class="section__text__p1">a first year student at ENSEEIHT</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">Download cv</button>
+            </div>
+            <div class="socials_container">
+                <img src="./assets/logo-linkedin.png" alt="My linkedin profile" 
+                class="icon" onclick="location.href='https://www.linkedin.com/in/ikram-berroug-7b8195293/'">
+                <img src="./assets/github-logo.png" alt="My github profile" 
+                class="icon" onclick="location.href='https://github.com/ikramberroug'">
+            </div>
+        </div>
+    </section>
+
+    <section id="Engineering_course">
+        <h1 class="title">Engineering course</h1>
+        <h1 class="title_2">ENSEEIHT, Toulouse, France</h1>
+        <p class="section__text__p1">Sept 2023 - Today</p>
+        <p class="section__text__p1">Digital sciences</p>
+        <h1 class="title_2">CPGE Lycée Al-Zahrawi, Rabat, Morocco</h1>
+        <p class="section__text__p1">August 2022 - July 2023</p>
+        <p class="section__text__p1">2nd year, MP*</p>
+        <h1 class="title_2">CPGE Lycée Mohamed V, Béni Mellal, Morocco</h1>
+        <p class="section__text__p1">Sept 2021 - July 2022</p>
+        <p class="section__text__p1">1st year, MPSI</p>
+        <h1 class="title_2">Lycée Hassan ||, Béni Mellal, Morocco</h1>
+        <p class="section__text__p1">Sept 2020 - Juin 2021</p>
+        <p class="section__text__p1">Baccalauréat Sciences Mathématiques A - Honors</p>
+    </section>
+
+    <section id="International_mobility">
+        <h1 class="title">International mobility</h1>
+        <div class="timeline">
+            <div class="checkpoint">
+                <div>
+                    <img src="assets/Flag_of_Italy_Flat_Wavy-512x393.png" alt="Italy">
+                    <p>I came into this world in 2003 in Rome, the capital of Italy. I spent my early years there, going to primary school until I turned nine in 2012.</p>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <img src="assets/Flag_of_Morocco_Flat_Wavy-512x393.png" alt="Morocco">
+                    <p>In 2012, my parents made the decision to go back to Morocco, my home country, and more specifically to Beni Mellal, a small city in the heart of Morocco. I continued my education there until I completed my baccalaureate, and I even pursued my first year of preparatory classes in that city.</p>
+                    <p>During the second year, I moved on to study my second year of preparatory classes at a more prestigious institution, Al Zahrawi, situated in Rabat.</p>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <img src="assets/Flag_of_France_Flat_Wavy-512x393.png" alt="France">
+                    <p>And now, I find myself residing in France, where I am currently pursuing my studies at ENSEEIHT, an engineering school located in Toulouse.</p>
+                </div>
+            </div>
+            <div class="checkpoint">
+                <div>
+                    <img src="assets/questionmark.png" alt="future">
+                    <p>In the upcoming years, I'm uncertain about my future residence or destinations. I am particularly intrigued by the dual-degree programs our school provides, such as the opportunity to pursue a master's degree at universities like Georgia Tech and EPFL.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Sustainability_and_civic_engagement">
+        <h1 class="title">Sustainability and civic engagement</h1>
+        <p class="section__text__p2">I am excited to explore and engage with the domains of sustainability and civic engagement, even though I currently have limited experience in these areas. I believe that these aspects are essential for building a better world and making a positive impact on our communities. While I may not have prior experience, my commitment and enthusiasm to contribute are strong motivators for me to get involved and learn.</p>
+        <div class="container-hallofchange">
+            <img src="./assets/hallofchange.png" alt="Hall of change" onclick="location.href='https://www.hallofchange.fr/'">
+            <p>Certainly, in the near future, I will be more active on this subject. As an example, since I am currently studying in Toulouse, I am ready to join the Toulouse-based association "Hall of Change" and engage in volunteer activities.</p>
+
+        </div>
+        
+    </section>
+
+    <section id="Sport_and_other_activities">
+        <h1 class="title">Sport and other activities</h1>
+        <h1 class="title_2">Club photo7</h1>
+        <p class="section__text__p2">By joining the photo7 club, I have the opportunity to develop my photography skills, explore new subjects, and meet like-minded individuals who share the same passion. I am looking forward to continuing to explore the world of photography with the photo7 club. Photography is a true love of mine.</p>
+        <h1 class="title_2">Club net7</h1>
+        <p class="section__text__p2">I'm in the Net7 club, and it's a great journey. Being part of this club helps me get better at web development, learning HTML, CSS, and more. I also get to meet others who love making websites. I'm excited to keep learning about web development with the Net7 club. Web development isn't just a skill; it's something I really enjoy, and it makes me want to keep learning and growing.</p>
+    </section>
+
+    <section id="Career_development">
+        <h1 class="title">Career development</h1>
+    </section>
+
+    <section id="contact">
+    <h1 class="title">Contact me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
+            <p><a href="mailto:ikramberroug24@gmail.com">ikramberroug24@gmail.com</a></p>   
+        </div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
