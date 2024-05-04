@@ -357,6 +357,28 @@ p {
     margin-bottom: 1rem;
 }
 
+
+/* SPORT AND OTHER ACTIVITIES */
+
+.container-tolosat {
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.img-container img {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
 /* CONTANCT */
 
 #contact {
