@@ -2,171 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ikram Berroug</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    <title>Ikram's e-portfolio</title>
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div>
-            <ul class="nav-links">
-                <li><a href="#Engineering_course">Engineering course</a></li>
-                <li><a href="#International_mobility">International mobility</a></li>
-                <li><a href="#Sustainability_and_civic_engagement">Sustainability and civic engagement</a></li>
-                <li><a href="#Sport_and_other_activities">Sport and other activities</a></li>
-                <li><a href="#Career_development">Career development</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#Engineering_course" onclick="toggleMenu()">Engineering course</a></li>
-                <li><a href="#International_mobility" onclick="toggleMenu()">International mobility</a></li>
-                <li><a href="#Sustainability_and_civic_engagement" onclick="toggleMenu()">Sustainability and civic engagement</a></li>
-                <li><a href="#Sport_and_other_activities" onclick="toggleMenu()">Sport and other activities</a></li>
-                <li><a href="#Career_development" onclick="toggleMenu()">Career development</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        <div class="section_text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Ikram Berroug</h1>
-            <p class="section__text__p1">a first year student at ENSEEIHT</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV_BERROUG_IKRAM_en.pdf')">Download english cv</button>
-            </div>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV_BERROUG_IKRAM.pdf')">Download french cv</button>
-            </div>
-            <div class="socials_container">
-                <img src="./assets/logo-linkedin.png" alt="My linkedin profile" 
-                class="icon" onclick="location.href='https://www.linkedin.com/in/ikram-berroug-7b8195293/'">
-                <img src="./assets/github-logo.png" alt="My github profile" 
-                class="icon" onclick="location.href='https://github.com/ikramberroug'">
-                <img src="./assets/LeetCode.png" alt="My leetcode profile" 
-                class="icon" onclick="location.href='https://leetcode.com/u/ikramberroug/'">
-            </div>
-        </div>
-    </section>
-
-    <section id="Engineering_course">
-        <h1 class="title">Engineering course</h1>
-        <img src="./assets/enseeiht.png" alt="Inp Enseeiht">
-        <h1 class="title_2">ENSEEIHT, Toulouse, France</h1>
-        <p class="section__text__p1">Sept 2023 - Today</p>
-        <p class="section__text__p1">Digital sciences</p>
-        <h1 class="title_2">CPGE Lycée Al-Zahrawi, Rabat, Morocco</h1>
-        <p class="section__text__p1">August 2022 - July 2023</p>
-        <p class="section__text__p1">2nd year, MP*</p>
-        <h1 class="title_2">CPGE Lycée Mohamed V, Béni Mellal, Morocco</h1>
-        <p class="section__text__p1">Sept 2021 - July 2022</p>
-        <p class="section__text__p1">1st year, MPSI</p>
-        <h1 class="title_2">Lycée Hassan ||, Béni Mellal, Morocco</h1>
-        <p class="section__text__p1">Sept 2020 - Juin 2021</p>
-        <p class="section__text__p1">Baccalauréat Sciences Mathématiques A - Honors</p>
-    </section>
-
-    <section id="International_mobility">
-        <h1 class="title">International mobility</h1>
-        <div>
-            <img src="assets/Flag_of_Italy_Flat_Wavy-512x393.png" alt="Italy">
-            <p>I came into this world in 2003 in Rome, the capital of Italy. I spent my early years there, going to primary school until I turned nine in 2012.</p>
-        </div>
-        <div>
-            <img src="assets/Flag_of_Morocco_Flat_Wavy-512x393.png" alt="Morocco">
-            <p>In 2012, my parents made the decision to go back to Morocco, my home country, and more specifically to Beni Mellal, a small city in the heart of Morocco. I continued my education there until I completed my baccalaureate, and I even pursued my first year of preparatory classes in that city.</p>
-            <p>During the second year, I moved on to study my second year of preparatory classes at a more prestigious institution, Al Zahrawi, situated in Rabat.</p>
-        </div>
-        <div>
-            <img src="assets/Flag_of_France_Flat_Wavy-512x393.png" alt="France">
-            <p>And now, I find myself residing in France, where I am currently pursuing my studies at ENSEEIHT, an engineering school located in Toulouse.</p>
-        </div>
-        <div>
-            <img src="assets/questionmark.png" alt="future">
-            <p>In the upcoming years, I'm uncertain about my future residence or destinations. I am particularly intrigued by the dual-degree programs our school provides, such as the opportunity to pursue a master's degree at universities like Georgia Tech and EPFL.</p>
-        </div>
-    </section>
-
-    <section id="Sustainability_and_civic_engagement">
-        <h1 class="title">Sustainability and civic engagement</h1>
-        <div class="container-hallofchange">
-            <img src="./assets/hallofchange.png" alt="Hall of change" onclick="location.href='https://www.hallofchange.fr/'">
-            <p>Being a student in Toulouse currently, I have already taken steps towards being more proactive in this regard. For instance, given my current location, I've already started engaging with the Toulouse-based association 'Hall of Change' and have begun participating in their volunteer activities. I find it to be a commendable initiative that fosters community involvement and contributes positively.</p>
-        </div>
-        <div class="container-lowtech">
-            <img src="./assets/low-tech.png" alt="Film low-tech" onclick="location.href='https://www.unifrance.org/film/56353/low-tech/'">
-            <p>During the Ecological and Social Transition Day organized at my school, ENSEEIHT, we had the opportunity to watch the film "Low Tech", a documentary produced by Adrien Bellay. This screening was a revelation for me. Through this documentary, I was able to grasp the true essence of "low tech" technologies and become aware of the significant impact that advanced technologies, or "high tech", have on our environment. This newfound insight has profoundly enriched my understanding of current ecological issues.</p>
-        </div>
-        <div class="container-roundtable">
-            <img src="./assets/beeguard.png" alt="BeeGuard" onclick="location.href='https://www.beeguard.fr/'">
-            <img src="./assets/hector.png" alt="Hector le collector" onclick="location.href='https://hectorlecollector.fr/'">
-            <p>During the same day, I also had the chance to attend a roundtable discussion on the topic of impact entrepreneurship. The guests were the CEOs of the startups Hector the Collector and BeeGuard! It was incredibly enlightening and motivating. This experience showed me the potential of aligning business ventures with environmental and social values, truly an inspiring moment that has expanded my perspective on how businesses can operate for the greater good.</p>
-        </div>
-    </section>
-
-    <section id="Sport_and_other_activities">
-        <h1 class="title">Sport and other activities</h1>
-
-        <h1 class="title_2">TOLOSAT project member</h1>
-        <div class="container-tolosat">
-            <p class="section__text__p2">As a team member involved in the gravimetry experiment of the Tolosat student nano-satellite Project, I've contributed to advancing space research alongside more than 70 students from Toulouse representing 5 different schools: ISAE-SUPAERO via its Cubesat Club Supaero, and INSA, ENAC, ENSEEIHT, and Paul Sabatier University UT3 through the ASTRE association.</p>
-            <p class="section__text__p2">Organized into various subsystem teams, we are developing a 3U Cubesat aimed at carrying out a dual student mission.</p>
-            <img src="./assets/tolosat_logo.png" alt="Tolosat" onclick="location.href='https://www.tolosat.fr/'">
-            <img src="./assets/astre-n7.png" alt="Astre" onclick="location.href='https://astre-toulouse.fr/'">
-            <img src="./assets/satellite.png" alt="Tolosat" onclick="location.href='https://www.tolosat.fr/'">
-            <a href="https://github.com/TOLOSAT">TOLOSAT Github</a>
-
-        </div>
-        
-        <h1 class="title_2">WOMEN7 CLUB, member of the communication team</h1>
-        <div class="container-women7">
-            <p class="section__text__p2">As part of my role within the Women7 Club, I focus on promoting engineering to young girls through various communication strategies and the organization of engaging events.</p>
-            <img src="./assets/women7.png" alt="WOMEN7" onclick="location.href='https://www.enseeiht.fr/fr/l-enseeiht/women7.html'">
-        </div>
-    </section>
-
-    <section id="Career_development">
-        <h1 class="title">Career development</h1>
-        <h1 class="title_2">Skills</h1>
-        <div class="container-women7">
-            <img src="./assets/skills/python.png" alt="Python">
-            <img src="./assets/skills/C.png" alt="C">
-            <img src="./assets/skills/java.png" alt="Java">
-            <img src="./assets/skills/ada.png" alt="Ada">
-            <img src="./assets/skills/javascript.png" alt="JavaScript">
-            <img src="./assets/skills/html.png" alt="Html">
-            <img src="./assets/skills/CSS.png" alt="CSS">
-            <img src="./assets/skills/Matlab.png" alt="Matlab">
-            <img src="./assets/skills/sql.png" alt="SQL">
-            <img src="./assets/skills/git.png" alt="Git">
-            <img src="./assets/skills/linux.png" alt="Linux">
-            <img src="./assets/skills/latex.png" alt="Latex">
-            <p>...</p>
-        </div>
-
-        <h1 class="title_2">Projects</h1>
-
-    </section>
-
-    <section id="contact">
-    <h1 class="title">Contact me</h1>
-    <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
-            <p><a href="mailto:ikramberroug24@gmail.com">ikramberroug24@gmail.com</a></p>   
-        </div>
-    </div>
-    </section>
-    <script src="script.js"></script>
     
+    <nav class="NavLinks">
+        <ul>
+            <li><a href="#EngineeringCourse">Engineering Course</a></li>
+            <li><a href="#CareerDevelopment">Career Development</a></li>
+            <li><a href="#SportAndOtherActivities">Sport and Other Activities</a></li>
+            <li><a href="#InternationalMobility">International Mobility</a></li>
+            <li><a href="#SustainabilityAndCivicEngagement">Sustainability and Civic Engagement</a></li>
+        </ul>
+    </nav>
+
+    <section id="AboutMe"></section>
+
+    <section id="EngineeringCourse">
+        <h2>Engineering Course</h2>
+        <ul>
+            <li>ENSEEIHT, Toulouse, France</li>
+            <li>CPGE Lycée Al-Zahrawi, Rabat, Morocco</li>
+            <li>CPGE Lycée Mohamed V, Béni Mellal, Morocco</li>
+        </ul>
+    </section>
+
+    <section id="CareerDevelopment">
+        <h2>Career Development</h2>
+        
+    </section>
+
+    <section id="SportAndOtherActivities"></section>
+
+    <section id="InternationalMobility"></section>
+
+    <section id="SustainabilityAndCivicEngagement"></section>
+
 </body>
 </html>
