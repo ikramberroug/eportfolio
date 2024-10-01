@@ -145,6 +145,7 @@ section {
     padding-top: 4vh;
     margin: 0 10rem;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 .section-container {
@@ -194,7 +195,6 @@ section {
 
 #socials_container {
     display: flex;
-    justify-content: center;
     margin-top: 1rem;
     gap: 1rem;
     text-align: center;
@@ -246,6 +246,59 @@ section {
     width: 400px;
     margin: auto 0;   
 }
+
+/* ENGINEERING COURSE */
+
+.timeline {
+    position: relative;
+    margin-left: 0;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0; /* Ligne à droite */
+    width: 4px;
+    height: 100%;
+    background: rgb(85, 85, 85); /* Gris utilisé */
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 2rem; /* Réduit l'espace entre les items et la ligne */
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: rgb(85, 85, 85); /* Gris utilisé */
+}
+
+.timeline-content {
+    max-width: 300px;
+    background: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+
 /* INTERNATIONAL MOBILITY */
 
 /* SUSTAINABILITY */
@@ -303,7 +356,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* CONTANCT */
+/* CONTACT */
 
 #contact {
     display: flex;
