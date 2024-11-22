@@ -156,9 +156,19 @@ section {
 
 #profile {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    align-items: center;
+    height: auto;
+    margin-bottom: 4rem;
+}
+.resume_container {
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .section__text {
@@ -183,6 +193,14 @@ section {
     margin-bottom: 1rem;
 }
 
+.hi_profile h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #2F4F4F;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .title {
     font-size: 2.2rem;
     text-align: center;
@@ -193,11 +211,33 @@ section {
     text-align: center;
 }
 
-#socials_container {
+.socials_container {
+    position: fixed;
+    bottom: 10%;
+    left: 2%;
     display: flex;
-    margin-top: 1rem;
+    flex-direction: column;
     gap: 1rem;
-    text-align: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.About_Me {
+    padding: 1rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 5rem;  /* Marge supplémentaire sous "Hi, I'm" */
+    margin-bottom: 3rem; /* Marge supplémentaire sous "About Me" */
+}
+.About_Me h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    color: #333;
 }
 
 /* ICON */
@@ -217,28 +257,74 @@ section {
 }
 
 .btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
 }
 
-.btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+.btn:hover {
+  background: #F6F9FE;
+  color: #174ea6;
 }
 
-.btn-color-2:hover {
-    cursor: pointer;
+.btn:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
 }
 
-.btn-color-2:hover {
-    background: rgb(53, 53, 53);
-    color: white;
+.btn:focus {
+  outline: none;
+  border: 2px solid #4285f4;
 }
 
+.btn:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.btn:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.btn:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.btn:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.btn:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
 /* PICTURE */
-
 
 .section__pic-container {
     display: flex;
@@ -256,15 +342,7 @@ section {
     max-width: 80%;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 80%;
-    background: rgb(85, 85, 85);
-}
+
 
 .timeline-item {
     display: flex;
@@ -274,16 +352,7 @@ section {
     padding-right: 2rem;
 }
 
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -8px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: rgb(85, 85, 85)
-}
+
 
 .timeline-content {
     max-width: 100%;
@@ -324,6 +393,140 @@ section {
     }
 }
 
+/* CAREER DEVELOPMENT */
+/* SKILLS GRID */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 0.5rem;
+    justify-items: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 100px;
+    text-align: center;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+}
+
+.skill-item img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+/* SECTION DES PROJETS */
+.projects-container {
+    margin-top: 1rem; /* Ajoute un espace au-dessus de la section */
+    display: flex; /* Utilise Flexbox pour organiser les projets */
+    flex-wrap: wrap; /* Permet aux projets de passer à la ligne si nécessaire */
+    gap: 2rem; /* Espace entre chaque projet */
+    justify-content: center; /* Centre les projets horizontalement */
+}
+
+/* Styles pour chaque projet individuel */
+.project-item {
+    background-color: white; /* Fond blanc pour chaque carte de projet */
+    padding: 0.5rem; /* Ajoute de l'espace intérieur à la carte */
+    border-radius: 10px; /* Coins arrondis */
+    width: calc(40% - 2rem); /* Chaque carte occupe environ un tiers de la largeur totale */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère autour des cartes */
+    transition: transform 0.3s ease, height 0.3s ease; /* Ajoute une transition fluide pour la taille et le mouvement */
+    display: flex; /* Utilise Flexbox pour organiser le contenu interne */
+    flex-direction: column; /* Organise les éléments en colonne */
+    align-items: center; /* Centre horizontalement les éléments */
+    text-align: center; /* Centre le texte */
+    overflow: hidden; /* Cache tout ce qui dépasse de la carte */
+    height: 300px; /* Hauteur initiale des cartes */
+    position: relative; /* Nécessaire pour les ajustements lors du survol */
+}
+
+/* SECTION DE L'IMAGE */
+/* Conteneur de l'image dans chaque projet */
+.project-image {
+    width: 100%; /* L'image occupe toute la largeur de la carte */
+    height: 75%; /* L'image occupe 75% de la hauteur de la carte */
+    overflow: hidden; /* Cache tout ce qui dépasse du conteneur */
+    border-radius: 10px; /* Coins arrondis pour l'image */
+    margin-bottom: 1rem; /* Espace sous l'image */
+}
+
+/* Styles pour l'image elle-même */
+.project-image img {
+    width: 100%; /* L'image s'ajuste à la largeur du conteneur */
+    height: 100%; /* L'image s'ajuste à la hauteur du conteneur */
+    object-fit: cover; /* Recadre l'image pour couvrir tout l'espace sans déformation */
+}
+
+/* TITRE DU PROJET */
+/* Styles pour le titre de chaque projet */
+.project-item h3 {
+    font-size: 1.25rem; /* Taille de la police */
+    color: rgb(85, 85, 85); /* Couleur du texte */
+    margin-bottom: 0.5rem; /* Espace sous le titre */
+}
+
+/* DESCRIPTION DU PROJET */
+/* Styles pour la description dans chaque projet */
+.project-description {
+    font-size: 0.9rem; /* Taille de la police */
+    color: rgb(100, 100, 100); /* Couleur du texte */
+    margin-bottom: 1rem; /* Espace sous la description */
+    line-height: 1.4; /* Hauteur des lignes */
+    display: -webkit-box; /* Configure l'affichage en boîte pour gérer les lignes visibles */
+    -webkit-box-orient: vertical; /* Définit l'orientation verticale pour le texte */
+    overflow: hidden; /* Cache tout texte supplémentaire */
+    text-overflow: ellipsis; /* Ajoute "..." au texte coupé */
+    transition: opacity 0.3s ease; /* Transition fluide pour l'opacité */
+}
+
+/* SECTION DES OUTILS */
+/* Conteneur pour les icônes des outils utilisés dans chaque projet */
+.project-tools {
+    display: flex; /* Utilise Flexbox pour aligner les icônes */
+    gap: 0.5rem; /* Espace entre chaque icône */
+    justify-content: center; /* Centre les icônes horizontalement */
+    margin-top: auto; /* Positionne cette section en bas de la carte */
+}
+
+/* Styles pour chaque icône d'outil */
+.tool-icon {
+    width: 25px; /* Largeur de chaque icône */
+    height: 25px; /* Hauteur de chaque icône */
+}
+
+/* DESIGN RESPONSIVE */
+/* Adaptation des cartes pour les écrans moyens (tablettes) */
+@media (max-width: 768px) {
+    .project-item {
+        width: calc(50% - 1rem); /* Chaque carte occupe 50% de la largeur */
+    }
+}
+
+/* Adaptation des cartes pour les écrans petits (mobiles) */
+@media (max-width: 480px) {
+    .project-item {
+        width: 100%; /* Chaque carte occupe toute la largeur */
+    }
+}
 
 
 /* INTERNATIONAL MOBILITY */
