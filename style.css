@@ -162,14 +162,6 @@ section {
     height: auto;
     margin-bottom: 0rem;
 }
-.resume_container {
-    position: relative;
-    bottom: 10%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
 
 .section__text {
     align-self: center;
