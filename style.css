@@ -403,138 +403,16 @@ section {
 }
 
 /* CAREER DEVELOPMENT */
-/* SKILLS GRID */
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1rem;
-    margin-top: 0.5rem;
-    justify-items: center;
-}
 
-.skill-item {
+.btns_container {
+    position: relative;
+    bottom: 10%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: white;
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    width: 100px;
-    text-align: center;
-}
-
-.skill-item:hover {
-    transform: translateY(-10px);
-}
-
-.skill-item img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 0.5rem;
-}
-
-.skill-item p {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    margin-top: 0.5rem;
-}
-
-/* SECTION DES PROJETS */
-.projects-container {
-    margin-top: 1rem; /* Ajoute un espace au-dessus de la section */
-    display: flex; /* Utilise Flexbox pour organiser les projets */
-    flex-wrap: wrap; /* Permet aux projets de passer à la ligne si nécessaire */
-    gap: 2rem; /* Espace entre chaque projet */
-    justify-content: center; /* Centre les projets horizontalement */
-}
-
-/* Styles pour chaque projet individuel */
-.project-item {
-    background-color: white; /* Fond blanc pour chaque carte de projet */
-    padding: 0.5rem; /* Ajoute de l'espace intérieur à la carte */
-    border-radius: 10px; /* Coins arrondis */
-    width: calc(40% - 2rem); /* Chaque carte occupe environ un tiers de la largeur totale */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre légère autour des cartes */
-    transition: transform 0.3s ease, height 0.3s ease; /* Ajoute une transition fluide pour la taille et le mouvement */
-    display: flex; /* Utilise Flexbox pour organiser le contenu interne */
-    flex-direction: column; /* Organise les éléments en colonne */
-    align-items: center; /* Centre horizontalement les éléments */
-    text-align: center; /* Centre le texte */
-    overflow: hidden; /* Cache tout ce qui dépasse de la carte */
-    height: 300px; /* Hauteur initiale des cartes */
-    position: relative; /* Nécessaire pour les ajustements lors du survol */
-}
-
-/* SECTION DE L'IMAGE */
-/* Conteneur de l'image dans chaque projet */
-.project-image {
-    width: 100%; /* L'image occupe toute la largeur de la carte */
-    height: 75%; /* L'image occupe 75% de la hauteur de la carte */
-    overflow: hidden; /* Cache tout ce qui dépasse du conteneur */
-    border-radius: 10px; /* Coins arrondis pour l'image */
-    margin-bottom: 1rem; /* Espace sous l'image */
-}
-
-/* Styles pour l'image elle-même */
-.project-image img {
-    width: 100%; /* L'image s'ajuste à la largeur du conteneur */
-    height: 100%; /* L'image s'ajuste à la hauteur du conteneur */
-    object-fit: cover; /* Recadre l'image pour couvrir tout l'espace sans déformation */
-}
-
-/* TITRE DU PROJET */
-/* Styles pour le titre de chaque projet */
-.project-item h3 {
-    font-size: 1.25rem; /* Taille de la police */
-    color: rgb(85, 85, 85); /* Couleur du texte */
-    margin-bottom: 0.5rem; /* Espace sous le titre */
-}
-
-/* DESCRIPTION DU PROJET */
-/* Styles pour la description dans chaque projet */
-.project-description {
-    font-size: 0.9rem; /* Taille de la police */
-    color: rgb(100, 100, 100); /* Couleur du texte */
-    margin-bottom: 1rem; /* Espace sous la description */
-    line-height: 1.4; /* Hauteur des lignes */
-    display: -webkit-box; /* Configure l'affichage en boîte pour gérer les lignes visibles */
-    -webkit-box-orient: vertical; /* Définit l'orientation verticale pour le texte */
-    overflow: hidden; /* Cache tout texte supplémentaire */
-    text-overflow: ellipsis; /* Ajoute "..." au texte coupé */
-    transition: opacity 0.3s ease; /* Transition fluide pour l'opacité */
-}
-
-/* SECTION DES OUTILS */
-/* Conteneur pour les icônes des outils utilisés dans chaque projet */
-.project-tools {
-    display: flex; /* Utilise Flexbox pour aligner les icônes */
-    gap: 0.5rem; /* Espace entre chaque icône */
-    justify-content: center; /* Centre les icônes horizontalement */
-    margin-top: auto; /* Positionne cette section en bas de la carte */
-}
-
-/* Styles pour chaque icône d'outil */
-.tool-icon {
-    width: 25px; /* Largeur de chaque icône */
-    height: 25px; /* Hauteur de chaque icône */
-}
-
-/* DESIGN RESPONSIVE */
-/* Adaptation des cartes pour les écrans moyens (tablettes) */
-@media (max-width: 768px) {
-    .project-item {
-        width: calc(50% - 1rem); /* Chaque carte occupe 50% de la largeur */
-    }
-}
-
-/* Adaptation des cartes pour les écrans petits (mobiles) */
-@media (max-width: 480px) {
-    .project-item {
-        width: 100%; /* Chaque carte occupe toute la largeur */
-    }
+    align-items: center;
+    gap: 1rem;
 }
 
 
